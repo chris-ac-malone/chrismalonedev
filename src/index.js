@@ -8,10 +8,12 @@ import Home from './pages/Home.js';
 import Portfolio from "./pages/Portfolio.js";
 import ContactMe from "./pages/ContactMe.js";
 import NoPage from "./pages/NoPage.js";
+import ProjectCard from './components/ProjectCard';
 import logo from './assets/ChrisMaloneDevLogoSmall.png';
 import './App.css';
 
 export default function App() {
+  const [darkToggle, setDarkToggle] = React.useState(false)
   return (
     <BrowserRouter>
       <Routes>
