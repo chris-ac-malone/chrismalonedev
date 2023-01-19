@@ -15,12 +15,12 @@ const Home = () => {
     return (
         <>
             <div className="bg-header overflow-hidden">
-                <div className="h-screen w-full table text-center text-4xl font-bold animate-fadein">
+                <div className="h-screen w-full table text-center text-4xl font-bold animate-fade-in">
                     <h1 className="table-cell w-full text-center align-middle py-10 dark:bg-slate-500 text-3xl md:text-7xl">ChrisMalone.dev<img className="m-auto mt-10 w-40 rounded-full shadow-lg" src={Profile} alt="Chris Malone Web Developer" />
                         <div className="flex max-w-xs m-auto pt-4 gap-20">
-                            <a href="https://www.linkedin.com/in/christopher-malone-898ba9161/" className="flex-1 animate-slideIn"><img className="shadow-md cursor-pointer hover:scale-105 transition-transform rounded-full" src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="" /></a>
-                            <a href="https://github.com/chris-ac-malone" className="flex-1 pt-8 animate-slideIn"><img className="shadow-md cursor-pointer hover:scale-105 transition-transform rounded-full" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /></a>
-                            <a href="https://codepen.io/Acedoutry" className="flex-1 animate-slideIn"><img className="shadow-md cursor-pointer hover:scale-105 transition-transform rounded-full" src={require("../assets/codepen.png")} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/christopher-malone-898ba9161/" className="flex-1 animate-slide-in"><img className="shadow-md cursor-pointer hover:scale-105 transition-transform rounded-full" src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="" /></a>
+                            <a href="https://github.com/chris-ac-malone" className="flex-1 pt-8 animate-slide-in-delay-200"><img className="shadow-md cursor-pointer hover:scale-105 transition-transform rounded-full" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /></a>
+                            <a href="https://codepen.io/Acedoutry" className="flex-1 animate-slide-in-delay-400"><img className="shadow-md cursor-pointer hover:scale-105 transition-transform rounded-full" src={require("../assets/codepen.png")} alt="" /></a>
                         </div></h1>
                 </div>
                 <div className="relative mt-20">

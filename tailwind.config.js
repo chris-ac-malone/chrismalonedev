@@ -26,13 +26,17 @@ module.exports = {
         }
       },
       animation: {
-        fadein: 'fadein 2s ease-in',
-        slideIn: 'slideIn 2s ease',
-      }
+        'fade-in': 'fadein 2s ease-in',
+        'slide-in': 'slideIn 2s ease',
+        'slide-in-delay-200': 'slideIn 2s ease 200ms',
+        'slide-in-delay-400': 'slideIn 2s ease 400ms',
+      },
     },
     fontFamily: {
       quicksand: ["Quicksand", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-animation-delay"),
+  ],
 }
