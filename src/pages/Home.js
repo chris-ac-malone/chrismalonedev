@@ -1,7 +1,11 @@
 import CardBasic from "../components/CardBasic";
 import Profile from "../assets/Chris Graduation-25.jpg";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
+    const [darkMode, setDarkMode] = useState(false);
     const parallaxText = document.getElementsByClassName("parallax-text");
     function parallax() {
         for (let i = 0; i < parallaxText.length; i++) {
@@ -14,13 +18,14 @@ const Home = () => {
     }
     return (
         <>
-            <div className="bg-header overflow-hidden">
+            <div id="home-head" className={`bg-header overflow-hidden ${darkMode ? "dark" : ""}`}>
+                <button className="fixed left-3 top-1 text-2xl dark:text-yellow-300 text-slate-800" onClick={() => setDarkMode(!darkMode)}> <FontAwesomeIcon icon={faMoon} /> </button>
                 <div className="h-screen w-full table text-center text-4xl font-bold animate-fade-in">
-                    <h1 className="table-cell w-full text-center align-middle py-10 dark:bg-slate-500 text-3xl md:text-7xl">ChrisMalone.dev<img className="m-auto mt-10 w-40 rounded-full shadow-lg" src={Profile} alt="Chris Malone Web Developer" />
+                    <h1 className="table-cell w-full text-center align-middle py-10 dark:bg-slate-800 dark:text-white text-3xl md:text-7xl">Chris Malone<img className="m-auto mt-10 w-40 rounded-full shadow-lg" src={Profile} alt="Chris Malone Web Developer" />
                         <div className="flex max-w-xs m-auto pt-4 gap-20">
-                            <a href="https://www.linkedin.com/in/christopher-malone-898ba9161/" className="flex-1 animate-slide-in"><img className="shadow-md cursor-pointer hover:scale-105 transition-transform rounded-full" src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="" /></a>
-                            <a href="https://github.com/chris-ac-malone" className="flex-1 pt-8 animate-slide-in-delay-200"><img className="shadow-md cursor-pointer hover:scale-105 transition-transform rounded-full" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /></a>
-                            <a href="https://codepen.io/Acedoutry" className="flex-1 animate-slide-in-delay-400"><img className="shadow-md cursor-pointer hover:scale-105 transition-transform rounded-full" src={require("../assets/codepen.png")} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/christopher-malone-898ba9161/" className="flex-1 animate-slide-in"><img className="dark:invert shadow-md cursor-pointer hover:scale-105 transition-transform rounded-full" src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="" /></a>
+                            <a href="https://github.com/chris-ac-malone" className="flex-1 pt-8 animate-slide-in-delay-200"><img className="dark:invert shadow-md cursor-pointer hover:scale-105 transition-transform rounded-full" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /></a>
+                            <a href="https://codepen.io/Acedoutry" className="flex-1 animate-slide-in-delay-400"><img className="dark:invert shadow-md cursor-pointer hover:scale-105 transition-transform rounded-full" src={require("../assets/codepen.png")} alt="" /></a>
                         </div></h1>
                 </div>
                 <div className="relative mt-20">

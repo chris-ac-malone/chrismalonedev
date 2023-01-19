@@ -31,6 +31,10 @@ module.exports = {
         'slide-in-delay-200': 'slideIn 2s ease 200ms',
         'slide-in-delay-400': 'slideIn 2s ease 400ms',
       },
+      aspectRatio: {
+        '1/2': 'aspect-ratio: 1/2',
+        '2/1': 'aspect-ratio: 2/1',
+      }
     },
     fontFamily: {
       quicksand: ["Quicksand", "sans-serif"],
