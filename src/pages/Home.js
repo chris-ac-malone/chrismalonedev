@@ -51,6 +51,7 @@ const Home = () => {
           </div>
           <div className="mx-auto px-3 grid lg:grid-cols-3 xl:grid-cols-3 grid-cols-1 relative container text-neutral-900 dark:text-neutral-50">
             <div></div>
+            <CardBasic bgImage={require('../assets/cm-update-history.png')} href="https://wordpress.org/plugins/cm-update-history/" cardTitle="CM Update History" cardInfo="A WordPress plugin that creates a database table, tracks plugin and theme updates, and displays the data to a dashboard widget. You can find it on the WordPress plugin directory." />
             <CardBasic bgImage={require('../assets/vertical-carousel.png')} href="https://codepen.io/Acedoutry/full/YzjQXee" cardTitle="Vertical Carousel" cardInfo="A 3D slot-style vertical carousel. It rotates on scroll and locks into the next item. In progress." />
             <CardBasic bgImage={require('../assets/cm-3d-card.png')} href="https://codepen.io/Acedoutry/pen/zYaOgRX" cardTitle="CM 3D Card" cardInfo="A 3d Card widget that generates cards on valid divs on the page. These cards use Javascript-driven-CSS to show a 3D effect on hover." />
             <div className="parallax-text absolute -right-5 z-0 mix-blend-difference text-5xl lg:text-7xl max-w-screen-sm overflow-hidden mt-96">Javascript</div>
